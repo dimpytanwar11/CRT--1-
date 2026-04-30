@@ -101,3 +101,29 @@ int main(){
     
     return 0;
 }
+
+
+//login credentials
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    const int userId = 1234;
+    const int password = 0000;
+    
+    int inputId, inputPassword;
+    cout << "enter id:";
+    cin >> inputId;
+    cout << "enter password";
+    cin >> inputPassword;
+    
+    bool isGranted = (userId == inputId) && (password == inputPassword);
+    
+    cout << "acces granted" << isGranted << endl;
+    cout << "access denied" << !isGranted << endl;
+    
+    return 0;
+
+    
+}
