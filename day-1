@@ -29,3 +29,17 @@ int main(){
     
     cout << result << endl;
 }
+
+int main(){
+    int side1;
+    int side2;
+    int side3;
+    
+    cin >> side1 >> side2 >> side3;
+    
+    bool isEqui = (side1 > 0)&& (side1 == side2) && (side2 == side3);
+    
+    cout << isEqui << endl;
+    
+    return 0;
+}
