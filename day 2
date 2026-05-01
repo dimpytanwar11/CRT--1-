@@ -112,4 +112,39 @@ int main(){
     cout << sum;
     return 0;
 }
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    int choice;
+    cin >> choice;
+    
+    switch(choice){
+        case 1:
+        cout<< "transferring call to the customer support...";
+        break;
+        
+        case 2:
+        cout << "Transferring call to billing and accounts..";
+        break;
+        
+        case 3:
+        cout << "connecting to technical help desk..";
+        break;
+        
+        case 4:
+        cout << "connecting call to agent";
+        break;
+        
+        default:
+        cout << "invalid selection ";
+        
+        
+    }
+    return 0;
+    
+    
+}
     
