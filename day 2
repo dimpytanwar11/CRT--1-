@@ -27,3 +27,28 @@ int main(){
     }
     return 0;
 }
+
+// conditional statements
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin >> age;
+    
+    if(age >= 18){
+        if(age >=100){
+            cout << "we are eligible for vote(but we are super senior citizen)";
+        }else{
+            cout << "Eligible for vote";
+        }
+    }else {
+        if(age < 0){
+            cout << "enter a valid age number";
+        }else{
+            cout << "not eligible for vote";
+        }
+    }
+        
+        
+}
