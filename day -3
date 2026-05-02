@@ -96,3 +96,22 @@ int main(){
          cout << "not a prime number";
      }
  }
+
+
+
+//  smartphone unlock
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int password;
+    do {
+        cout << "Enter the password...";
+        cin>> password;
+    }while(password != 1234);
+    cout << "phone unlocked!..";
+    
+    return 0;
+}
+
