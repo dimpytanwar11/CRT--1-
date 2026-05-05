@@ -53,3 +53,60 @@ int main(){
     cout << areaOfRectangle;
     
 }
+
+
+//types of functions
+
+//nor arg no return type 
+#include<iostream>
+using namespace std;
+
+void DoorBell(){
+    cout << "Ting - Tong";
+}
+
+int main(){
+    DoorBell();
+    return 0;
+}
+
+// arg , no return type
+#include<iostream>
+using namespace std;
+
+void sendText( string message){
+    cout << message;
+}
+
+int main(){
+    sendText("BJP won");
+    return 0;
+}
+
+//nor argument , return type
+#include<iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main(){
+     cout << ticketNumber();
+    return 0;
+}
+
+//arg with some return type
+
+#include<iostream>
+using namespace std;
+
+int currencyCoversion(int amtInUSD){
+    return amtInUSD / 100;
+    
+}
+
+
+int main(100){
+    cout << currencyCoversion();
+}
