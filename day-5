@@ -101,8 +101,8 @@ int main(){
 #include<iostream>
 using namespace std;
 
-int currencyCoversion(int amtInUSD){
-    return amtInUSD / 100;
+int currencyCoversion(int amtInINR){
+    return amtInINR / 100;
     
 }
 
