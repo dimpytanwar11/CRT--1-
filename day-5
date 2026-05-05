@@ -36,3 +36,20 @@ int main(){
     printMessage();
     return 0;
 }
+
+
+    
+#include<iostream>
+using namespace std;
+
+int area(int a,int b){
+    return a * b;
+}
+
+int main(){
+    int len = 10;
+    int wid = 5;
+    int areaOfRectangle = area(len,wid);
+    cout << areaOfRectangle;
+    
+}
