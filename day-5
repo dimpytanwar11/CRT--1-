@@ -20,3 +20,19 @@ int main(){
         cout << "\n";
     }
 }
+
+
+
+//functions
+
+#include<iostream>
+using namespace std;
+
+void printMessage(){
+    cout << "hi we are learning functions..";
+}
+
+int main(){
+    printMessage();
+    return 0;
+}
