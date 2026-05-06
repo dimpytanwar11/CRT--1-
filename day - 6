@@ -19,3 +19,28 @@ int main(){
     swapNumber(&a, &b);
     cout << a << " "  << b;
 }
+
+//call by value// callbyref
+//value- photocopy
+//ref - original
+#include<iostream>
+using namespace std;
+
+void updatebyValue(int a){
+    a = 500;
+}
+void updatebyReference(int &a){
+    a = 500;
+}
+
+int main(){
+    
+    int original = 100;
+    cout << original << "\n";
+    
+    updatebyValue(original);
+    cout << original;
+    updatebyReference(original);
+    cout << original;
+    
+}
