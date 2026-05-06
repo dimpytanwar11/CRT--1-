@@ -116,3 +116,22 @@ int main(){
     
 }
 
+//Access Modifiers
+//public
+
+#include<iostream>
+using namespace std;
+
+class PublicPark{
+public:
+void enter(){
+    cout << "anyone can enter in the park..";
+    }
+};
+
+int main(){
+    PublicPark p;
+    p.enter();
+}
+
+
