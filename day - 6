@@ -44,3 +44,21 @@ int main(){
     cout << original;
     
 }
+
+//coffee cost
+#include<iostream>
+using namespace std;
+
+int cost(int numberofCoffee, int amount = 50){
+    
+    return amount * numberofCoffee;
+    
+}
+
+int main(){
+    int numberofCoffee;
+    cin >> numberofCoffee;
+    
+    cout <<cost(numberofCoffee);
+}
+
