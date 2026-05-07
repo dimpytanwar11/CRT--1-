@@ -44,3 +44,32 @@ int main(){
     obj1.accessOfSecretCode();
     
 }
+
+
+//Constructors
+//default //parameteriesed // copy
+
+#include<iostream>
+using namespace std;
+
+class wifiConnections {
+public:    
+    string networkName;
+    string password;
+    //contructor
+    wifiConnections(){
+        networkName = "ACTFibre";
+        password = "BJP wons";
+    }
+public:    
+ void showDetails(){
+     cout << "Network name is: " << networkName << "and its password is " << password;
+     
+    }    
+};
+int main(){
+    
+    wifiConnections obj1;
+    obj1.showDetails();
+}
+
