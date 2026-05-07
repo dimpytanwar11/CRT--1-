@@ -72,4 +72,46 @@ int main(){
     wifiConnections obj1;
     obj1.showDetails();
 }
+=========================================================================================
+
+
+                     ----------OBJECT ORIENTED PROGRAMMING-----
+
+
+//ENCAPSULATION
+//ENCAPSULATION means we are binding the data into a single unit
+//into a single unit called class and making some restrictions on this sclass members
+//data security 
+//controlled access over my data 
+//validation before accessing the data 
+//code maintainability
+
+#include<iostream>
+using namespace std;
+
+class BankAccount{
+private:    
+int balance;
+public:
+void setBalance(int amount){
+    if(amount >= 0){
+        balance = amount;
+    }else{
+        cout << "enter a valid number...";
+    }
+}
+public:
+int getBalance(){
+    return balance;
+    }
+    
+};
+
+int main(){
+    BankAccount obj1;
+    obj1.setBalance(5000);
+    cout << obj1.getBalance();
+    
+    
+}
 
