@@ -19,3 +19,28 @@ int main(){
     myaccount.showBalance();
     
 }
+
+
+//protected
+
+#include<iostream>
+using namespace std;
+
+class Parent{
+protected:
+    int seceretCode = 1234;
+
+};
+class child : public Parent{
+public:    
+    void accessOfSecretCode(){
+        cout << "secretCode of the locker is " << seceretCode;
+        }
+};
+
+
+int main(){
+    child obj1;
+    obj1.accessOfSecretCode();
+    
+}
