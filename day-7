@@ -115,3 +115,12 @@ int main(){
     
 }
 
+
+//ABSTRACTION
+//Abstraction means hiding the implementation and 
+//showing only the necesassry or essential features to the users
+//abstarct class-- class cannot be initialised and it is formed using the abstract 
+//keyword
+//abstract method --there is no initialization of the
+//abstarct method
+
