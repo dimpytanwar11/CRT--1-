@@ -228,9 +228,30 @@ public:
     
 };
 
+//overiding
+
 int main(){
     Dog d;
     Cat c;
     d.sound();
     c.sound();
+}
+
+class Parent{
+public:
+    virtual void sum(int a, int b){
+        cout << a + b << "Parent";
+    }
+};
+
+class child : public Parent{
+public:
+    void sum(int a, int b) override {
+        cout << a + b << "child";
+    }
+    
+};
+int main(){
+    child c;
+    c.sum(10,20);
 }
