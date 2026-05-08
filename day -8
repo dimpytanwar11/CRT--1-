@@ -125,3 +125,33 @@ int main(){
     obj1.Parent2::giveMeMoney();
     
 }
+
+
+//HYBRID INHERITANCE
+//diamond problem
+
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+    void print(){
+        cout << "BJP wons";
+    }
+};
+class B :virtual public A {
+    //no logic
+};
+class C : virtual public A {
+    //no logic
+};
+class D : public B, public C{
+    //NO LOGIC
+};
+
+int main(){
+    
+    D obj1;
+    obj1.print();
+    
+}
