@@ -94,3 +94,34 @@ int main(){
     obj1.bikeStart();
     
 }
+
+
+//MULTIPLE INHERITANCE
+//without diamond
+
+#include<iostream>
+using namespace std;
+
+class Parent1{
+public:
+    void giveMeMoney(){
+        cout << "Mummy pese do" << "\n";
+    }
+};
+class Parent2{
+public:    
+    void giveMeMoney(){
+        cout << "papa pese do";
+    }
+};
+class child : public Parent1, public Parent2{
+    //NO LOGIC
+};
+
+int main(){
+    child  obj1;
+    // obj1.giveMeMoney();
+    obj1.Parent1::giveMeMoney();
+    obj1.Parent2::giveMeMoney();
+    
+}
