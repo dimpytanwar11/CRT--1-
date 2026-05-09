@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+//FUNCTION OVERRIDING
+
+class Appliance{
+public:
+    virtual void turnOn(){
+        cout << "Appliance is starting up.."<<"\n";
+    }
+    virtual void work() = 0;
+    
+};
+class FAN : public Appliance{
+public:
+    void turnOn() override{
+        cout << "Fan blades are moving slowly.."<< "\n";
+    }
+    void work() override {
+        cout << "fan is giving me cool air.." << "\n";
+    }
+    
+};
+class Toaster : public Appliance{
+    void work() override {
+        cout << "toaster is heating up the breads.."<<"\n";
+    }
+    
+};
+
+int main(){
+    Appliance* kitchenApp;
+    FAN myFan;
+    kitchenApp = &myFan;
+    kitchenApp -> turnOn();
+    kitchenApp -> work();
+    
+    Toaster myToast;
+    kitchenApp = &myToast;
+    kitchenApp -> turnOn();
+    kitchenApp -> work();
+}
