@@ -1,4 +1,5 @@
 //RECURSION
+//consecutibe one's
 
 #include<iostream>
 using namespace std;
@@ -22,6 +23,29 @@ int consecutiveOnes(int n){
 int main(){
     
     cout <<consecutiveOnes(10);
+    
+    
+    return 0;
+}
+
+//TILING PROBLEM
+#include<iostream>
+using namespace std;
+
+int tileComb(int n){
+    
+    //base
+    if(n<4 ){
+        return 1;
+    }
+    
+    //logic
+   return tileComb(n - 1) + tileComb(n - 4);
+}
+
+int main(){
+    
+    cout <<tileComb(4);
     
     
     return 0;
